@@ -359,6 +359,6 @@ add_textbox(s11, "🎉  Amazing Work! You're a Brain Booster Star!  🎉",
 
 # ==================== SAVE ====================
 today = date.today().strftime("%Y-%m-%d")
-out_path = rf"C:\Users\hp\OneDrive\Desktop\Kids Playbook\Brain_Boosters_PreK_{today}.pptx"
+out_path = f"Brain_Boosters_PreK_{today}.pptx"
 prs.save(out_path)
 print(f"Saved: {out_path}")
