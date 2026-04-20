@@ -1,3 +1,4 @@
+from datetime import date
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
 from pptx.dml.color import RGBColor
@@ -357,6 +358,7 @@ add_textbox(s11, "🎉  Amazing Work! You're a Brain Booster Star!  🎉",
             0.9, 6.35, 8.2, 0.55, 15, bold=True, color=(180, 130, 0), align=PP_ALIGN.CENTER)
 
 # ==================== SAVE ====================
-out_path = r"C:\Users\hp\OneDrive\Desktop\Kids Playbook\Brain_Boosters_PreK.pptx"
+today = date.today().strftime("%Y-%m-%d")
+out_path = rf"C:\Users\hp\OneDrive\Desktop\Kids Playbook\Brain_Boosters_PreK_{today}.pptx"
 prs.save(out_path)
 print(f"Saved: {out_path}")
